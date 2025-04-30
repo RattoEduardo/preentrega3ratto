@@ -9,6 +9,7 @@
         }
     }
     main {
+        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 10% 20% 35% 35%;
         align-content: center;
@@ -32,17 +33,23 @@
         height: 100%;
     }
 
+    main .contenedor-img {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-row: span 1;
+        height: 100%;
+        padding: 5%;
+    }
+
     main .img-tres, main .img-cuatro {
         width: 700px;
         height: 500px;
-        padding: 5%;
-        align-items: center;
     }    
 
 
     main div img {
         object-fit: scale-down;
-        align-items: center;
     }
 
     header img {
