@@ -65,7 +65,7 @@ main div img {
   height: 100%;
   object-fit: cover;
 }
-main .img-uno {
+main .img-uno, main .img-tres, main .img-cuatro {
   grid-row: 2;
   max-width: 100%;
   height: auto;
@@ -85,8 +85,10 @@ footer {
     padding-right: 40px;
   }
   main {
-    grid-template-columns: 2fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 10% 20% 35% 35%;
+    align-content: center;
+    text-align: center;
   }
   p {
     grid-row: 2;
@@ -94,15 +96,24 @@ footer {
   }
   main .img-uno {
     grid-row: 3;
+    width: 100%;
+    height: 100%;
   }
   main .img-dos {
     display: block;
     grid-row: 4;
-  }
-  main div img {
     width: 100%;
     height: 100%;
+  }
+  main .img-tres, main .img-cuatro {
+    width: 700px;
+    height: 500px;
+    padding: 5%;
+    align-items: center;
+  }
+  main div img {
     object-fit: scale-down;
+    align-items: center;
   }
   header img {
     width: 10%;
