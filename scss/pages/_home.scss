@@ -61,6 +61,25 @@ main {
     }
 }
 
+/* Estilos para contacto.html */
+.pagina-contacto {
+    div {
+      padding: 5%;
+      align-items: center;
+      form {
+        color: antiquewhite;
+        display: grid;
+        grid-template-columns: 50px 1fr;
+        grid-template-rows: repeat(3, 10%) 40% 10%;
+        gap: 10px 20px;
+  
+        input {
+          grid-column: 2;
+        }
+      }
+    }
+  }
+
 /* estilos de footer */
 footer {
     color: $color-tipo1;

@@ -12,44 +12,6 @@
     <link rel="stylesheet" href="../css/style.css">
 
     
-    <style>
-        /* estilos para contacto.html */
-
-        /* estilos de main */
-
-        main div form {
-           color: antiquewhite;
-           display: grid;
-           grid-template-columns: 50px 1fr;
-           grid-template-rows: repeat(3, 10%) 40% 10%;
-           gap: 10px 20px;
-        }
-
-        main div {
-           padding: 15%;
-           align-items: center;
-        }
-
-        main div form input {
-           grid-column: 2;
-        }
-
-        
-
-        /* estilos de desktop */
-
-        @media screen and (min-width: 1024px) {
-          main div form {
-              display: grid;
-              grid-template-columns: 150px 1fr;
-              gap: 10px 20px;
-            }
-
-          main div {
-              padding:10% 25%;
-          }
-        }
-    </style>
     <title>Contacto</title>
 </head>
 
@@ -90,7 +52,8 @@
     </Header>
     
     <!-- contenido principal -->
-    <main class="form.container"> 
+    <main class="pagina-contacto"> 
+        <h1 class="espacio-contacto">Contacto</h1>
         <div>
             <form action="/submit" method="post">
 
